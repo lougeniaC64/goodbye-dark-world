@@ -1,0 +1,26 @@
+{
+  "name": "goodbye-dark-world",
+  "version": "1.0.0",
+  "description": "Goodbye Dark World",
+  "main": "",
+  "scripts": {
+    "start": "npm run build && node dist/index.js",
+    "build": "rimraf dist/ && babel src -d dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "goodbye-dark-world"
+  ],
+  "author": "lougeniac64",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "rimraf": "^2.6.2"
+  }
+}
