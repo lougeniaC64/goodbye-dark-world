@@ -4,8 +4,9 @@
   "description": "Goodbye Dark World",
   "main": "",
   "scripts": {
-    "start": "npm run build && node dist/index.js",
+    "start": "npm run build && node dist/server.js",
     "build": "rimraf dist/ && babel src -d dist/",
+    "flow": "flow",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,7 +21,9 @@
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
+    "flow-bin": "^0.59.0",
     "rimraf": "^2.6.2"
   }
 }
