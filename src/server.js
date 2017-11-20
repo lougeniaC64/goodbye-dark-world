@@ -1,10 +1,11 @@
 // @flow
 
 import express from 'express'
+import noShows from './noShows'
 
-const app = express()
-const port: number = 3000
+export const app = express()
+const port: number = 5000
 
-app.get('/', (req, res) => res.send('Laters'))
-
+// app.use('noShows', noShows)
+app.use(noShows)
 app.listen(port, () => console.log(`Goodbye Dark World listening on port ${port}!`))
