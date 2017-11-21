@@ -1,7 +1,7 @@
 // @flow
 
 import express from 'express'
-import noShows from './noShows'
+import noShows from './routers/noShows'
 
 export const app = express()
 const port: number = 5000
